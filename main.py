@@ -17,24 +17,24 @@ def main():
 
     for path in glob.iglob(f'{logs_path}/*'):
         log = Log(path)
-        if log.get_utt_status():
 
-            # print(log.get_partnumber().__repr__())
+        # print(log.get_partnumber().__repr__())
 
-            model = log.get_model()
-            date = log.get_datetime()
-            print(date)
-            cycle_time = log.get_cycle_time()
-            part_number = log.get_partnumber()
-            led_red_info, led_red_measurement = log.get_test_redled()
+        model = log.get_model()
+        date = log.get_datetime()
+        print(date)
+        cycle_time = log.get_cycle_time()
+        part_number = log.get_partnumber()
+        led_red_info, led_red_measurement = log.get_test_redled()
 
-            #------------For cycle time---------------#
+        #------------For cycle time---------------#
+        # if log.get_utt_status():
             # models.append(model)
             # part_numbers.append(part_number)
             # dates.append(date)
             # cycle_times.append(cycle_time)
-            #----------------------------------------#
-
+        #----------------------------------------#
+        if log.get_utt_status():
             models.append(model)
             part_numbers.append(part_number)
             dates.append(date)
