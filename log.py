@@ -67,8 +67,8 @@ class Log:
                 return True if self.operator == "operator" else False
 
     def get_test_redled(self):
-        ledred_status = "NA"
-        Measurement = "NA"
+        ledred_status = None
+        Measurement = None
         lines_i = self.get_lines().__iter__()
         for line in lines_i:
             if "TEST 24 - K24 Digital Output - Activate Debug Red LED X:" in line:

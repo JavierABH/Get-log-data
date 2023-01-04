@@ -21,7 +21,7 @@ def main():
 
         # print(log.get_partnumber().__repr__())
 
-        serial = log.serial()
+        serial = log.get_serial()
         model = log.get_model()
         date = log.get_datetime()
         print(date)
