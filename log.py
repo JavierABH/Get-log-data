@@ -9,6 +9,7 @@ class Log:
         self.utt_status = None
         self.partnumber = None
         self.operator = None
+        self.serial = None
 
     def get_raw(self):
         with open(self.path) as logfile:
@@ -76,3 +77,9 @@ class Log:
                 next_line = lines_i.__next__()
                 Measurement = next_line[31:].rstrip('\n')
         return (ledred_status, Measurement)
+
+    def get_serial(self):
+        for line in self.get_lines():
+            if "Serial Number:" in line:
+                self.serial = line[30:].rstrip('\n')
+                return self.serial
