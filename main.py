@@ -5,9 +5,10 @@ import csv
 
 logs_path = r"C:\Users\K90011729\Documents\Graph Cycle time\Report"
 # fields = ['Model', 'PartNumber', 'Date', 'Cycle Time' ] 
-fields = ['Model', 'PartNumber', 'Date', 'Red Led X Status', 'Red Led X Time' ]
+fields = ['Serial', 'Model', 'PartNumber', 'Date', 'Red Led X Status', 'Red Led X Time' ]
 
 def main():
+    serials = []
     dates = []
     cycle_times = []
     models = []
@@ -20,6 +21,7 @@ def main():
 
         # print(log.get_partnumber().__repr__())
 
+        serial = log.serial()
         model = log.get_model()
         date = log.get_datetime()
         print(date)
@@ -29,12 +31,14 @@ def main():
 
         #------------For cycle time---------------#
         # if log.get_utt_status():
-            # models.append(model)
-            # part_numbers.append(part_number)
-            # dates.append(date)
-            # cycle_times.append(cycle_time)
+            # if log.get_operator():
+                # models.append(model)
+                # part_numbers.append(part_number)
+                # dates.append(date)
+                # cycle_times.append(cycle_time)
         #----------------------------------------#
-        if log.get_utt_status():
+        if log.get_operator():
+            serials.append(serial)
             models.append(model)
             part_numbers.append(part_number)
             dates.append(date)
@@ -47,7 +51,7 @@ def main():
         write = csv.writer(f)
         write.writerow(fields)
         # for row in zip(models, part_numbers, dates, cycle_times):
-        for row in zip(models, part_numbers, dates, leds_red_status, leds_red_measurements):
+        for row in zip(serials, models, part_numbers, dates, leds_red_status, leds_red_measurements):
             write.writerow(row)
             print(row)
 
