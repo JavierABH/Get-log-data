@@ -1,0 +1,735 @@
+********************************************************************************
+UUT Report
+Station ID:                   095ALLEGION05
+Serial Number:                AL47265374-AKMX771224200172-BB-A.01
+Date:                         Wednesday, October 19, 2022
+Time:                         1:55:01 AM
+Operator:                     operator
+Execution Time:               188.325437 seconds
+Number of Results:            148
+UUT Result:                   Failed
+Failure Chain:
+   Step                       Sequence             Sequence File
+   ----                       --------             -------------
+   TEST 22 - K24 Analog Input MainSequence         Sequence File Topaz.seq
+********************************************************************************
+
+Begin Sequence: MainSequence
+(C:\Topaz Sequence\Sequence File Topaz.seq)
+
+Backcheck:                     Passed
+     Measurement:              1
+     Limits:
+        Low:                   1
+     Comparison Type:          EQ (==)
+     Cimp_SerialNumber [In]:   AL47265374-AKMX771224200172-BB-A.01
+     Cimp_SerialNumber [Out]:  AL47265374-AKMX771224200172-BB-A.01
+     Cimp_StationName [In]:    STA_FNLFUNC133
+     Cimp_StationName [Out]:   STA_FNLFUNC133
+     Cimp_Function [In]:       ''
+     Cimp_Function [Out]:      TEST FINAL FUNCTIONAL
+     Module Time:              0.0048155
+Part number Test:              Passed
+     String:                   47265374+A+1
+     Limits:
+        String:                47265374+A+1
+     Comparison Type:          Case Sensitive
+TEST 1 - Undervoltage Power output 5V: Passed
+     Measurement:              0.0179756304
+     Limits:
+        Low:                   0
+        High:                  1
+     Comparison Type:          GELE (>= <=)
+     Module Time:              0.6162012
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 1 - Undervoltage Power output 3.3V: Passed
+     Measurement:              0.013961083
+     Limits:
+        Low:                   0
+        High:                  1
+     Comparison Type:          GELE (>= <=)
+     Module Time:              0.4993988
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 1 - Undervoltage Power - input current: Passed
+     Measurement:              0.0534772909
+     Limits:
+        Low:                   0.025
+        High:                  0.06
+     Comparison Type:          GELE (>= <=)
+     Module Time:              1.4608948
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+Led Power Undervoltage Power-AxisX: Passed
+     Measurement:              0
+     Limits:
+        Low:                   0.1
+     Comparison Type:          LE (<=)
+     X LED Power [Out]:        0
+     Y LED Power [Out]:        0
+     Module Time:              0.59828
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+Led Power Undervoltage Power-AxisY: Passed
+     Measurement:              0
+     Limits:
+        Low:                   0.1
+     Comparison Type:          LE (<=)
+TEST 3 - 24V Power -Output 5V: Passed
+     Measurement:              4.98352383
+     Units:                    Volts
+     Limits:
+        Low:                   4.925
+        High:                  5.2
+     Comparison Type:          GELE (>= <=)
+     Module Time:              1.0157027
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 3 - 24V Power- Output3.3: Passed
+     Measurement:              3.32703729
+     Units:                    Volts
+     Limits:
+        Low:                   3.25
+        High:                  3.35
+     Comparison Type:          GELE (>= <=)
+     Module Time:              1.000535
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 3 - 24V Power - Current:  Passed
+     Measurement:              8.79897512
+     Units:                    mA
+     Limits:
+        Low:                   7
+        High:                  11
+     Comparison Type:          GELE (>= <=)
+     Module Time:              0.4943054
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+Led Power Test at 24V-AxisX:   Passed
+     Measurement:              0.2153
+     Limits:
+        Low:                   0.21
+        High:                  0.6
+     Comparison Type:          GELE (>= <=)
+     X LED Power [Out]:        0.2153
+     Y LED Power [Out]:        0.6113
+     Module Time:              0.5982705
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+Led Power Test at 24V-AxisY:   Passed
+     Measurement:              0.6113
+     Limits:
+        Low:                   0.4902
+        High:                  0.9658
+     Comparison Type:          GELE (>= <=)
+TEST 2 - 12V Power:            Passed
+     Measurement:
+        Measurement[0] (5V):
+           Limits:
+              Low:             4.925000
+              High:            5.075000
+           Units:              volt
+           Comparison Type:    GELE (>= <=)
+           Data:               4.984790
+           Status:             Passed
+        Measurement[1] (3.3V):
+           Limits:
+              Low:             3.250000
+              High:            3.350000
+           Units:              volt
+           Comparison Type:    GELE (>= <=)
+           Data:               3.328759
+           Status:             Passed
+        Measurement[2] (Input Current):
+           Limits:
+              Low:             13.500000
+              High:            30.000000
+           Units:              mA
+           Comparison Type:    GELE (>= <=)
+           Data:               16.092632
+           Status:             Passed
+     Module Time:              1.5637226
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+Led Power Test at 12V- AxisX:  Passed
+     Measurement:              0.2341
+     Limits:
+        Low:                   0.21
+        High:                  0.6
+     Comparison Type:          GELE (>= <=)
+     X LED Power [Out]:        0.2341
+     Y LED Power [Out]:        0.7877
+     Module Time:              0.5847712
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+Led Power Test at 12V-AxisY:   Passed
+     Measurement:              0.7877
+     Limits:
+        Low:                   0.4902
+        High:                  0.9658
+     Comparison Type:          GELE (>= <=)
+KL16 FW Version UART:          Passed
+     String:                   TOPAZ Reader v02.06.00
+     Limits:
+        String:                TOPAZ Reader v02.06.00
+     Comparison Type:          Ignore Case
+KL16 Bootloader Version UART:  Passed
+     String:                   bootloader v1.2.9
+     Limits:
+        String:                bootloader v1.2.9
+     Comparison Type:          Ignore Case
+KL16 Compiled Date UART:       Passed
+     String:                   compiled on Aug  1 2019 at 18:11:22
+     Limits:
+        String:                compiled on Aug  1 2019 at 18:11:22
+     Comparison Type:          Ignore Case
+TEST 5 - Firmware Version:     Passed
+     String:                   2.6.0
+     Limits:
+        String:                2.6.0
+     Comparison Type:          Ignore Case
+     Module Time:              0.6227548
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 7 - KL16 Beeper ON:       Passed
+     Measurement:              7.1531
+     Limits:
+        Low:                   1.5
+     Comparison Type:          GE (>=)
+     Buzzer ON [Out]:          True
+     Measurement Value ON [Out]7.1531
+     Module Time:              1.9098597
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 7 - KL16 Beeper OFF:      Passed
+     Buzzer OFF [Out]:         True
+     Measurement Value Off [Out1.2
+     Module Time:              4.6193359
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 8 - KL16 SAM Test:        Passed
+     Measurement:              1
+     Limits:
+        Low:                   1
+     Comparison Type:          EQ (==)
+     Module Time:              0.1314718
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 10 - Prox FSK Card Read:  Passed
+     Measurement:
+        Measurement[0] (Range):
+           Limits:
+              Low:             3.9
+           Comparison Type:    GE (>=)
+           Data:               4.362992125984
+           Status:             Passed
+        Measurement[1] (Data):
+           Limits:
+              Low:             2979235712
+           Comparison Type:    EQ (==)
+           Data:               2979235712
+           Status:             Passed
+     Module Time:              7.5058453
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 10 - Prox FSK Card Read Range: Passed
+     Measurement:              4.362992125984
+     Limits:
+        Low:                   3.9
+     Comparison Type:          GE (>=)
+TEST 10 - Prox FSK Card-Data:  Passed
+     Measurement:              2979235712
+     Limits:
+        Low:                   2979235712
+     Comparison Type:          EQ (==)
+TEST 10 - Prox FSK Card-Bits:  Passed
+     Measurement:              26
+     Limits:
+        Low:                   26
+     Comparison Type:          EQ (==)
+TEST 11 - Prox ASK Card Read Range: Passed
+     Measurement:
+        Measurement[0] (Range):
+           Limits:
+              Low:             2.9
+           Comparison Type:    GE (>=)
+           Data:               3.373622047244
+           Status:             Passed
+        Measurement[1] (Data):
+           Limits:
+              Low:             3345110056
+           Comparison Type:    EQ (==)
+           Data:               3345110056
+           Status:             Passed
+     Module Time:              8.5571874
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 11 - Prox ASK Card Read Range: Passed
+     Measurement:              3.373622047244
+     Limits:
+        Low:                   2.9
+     Comparison Type:          GE (>=)
+TEST 11 - Prox ASK Card-Data:  Passed
+     Measurement:              3345110056
+     Limits:
+        Low:                   3345110056
+     Comparison Type:          EQ (==)
+TEST 11 - Prox ASK Card-Bits:  Passed
+     Measurement:              40
+     Limits:
+        Low:                   40
+     Comparison Type:          EQ (==)
+TEST 12 - SMART CLASSIC EV1 Card Read Range: Passed
+     Measurement:
+        Measurement[0] (Range):
+           Limits:
+              Low:             1.625
+           Comparison Type:    GE (>=)
+           Data:               2.017716535433
+           Status:             Passed
+        Measurement[1] (Data):
+           Limits:
+              Low:             335623680
+           Comparison Type:    EQ (==)
+           Data:               335623680
+           Status:             Passed
+     Module Time:              10.4480268
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 14 - SMART DESFIRE EV1 Card Read: Passed
+     Measurement:              2.017716535433
+     Limits:
+        Low:                   1.625
+     Comparison Type:          GE (>=)
+TEST 12 - SMART CLASSIC EV1 Card -Data: Passed
+     Measurement:              335623680
+     Limits:
+        Low:                   335623680
+     Comparison Type:          EQ (==)
+TEST 12 - SMART CLASSIC EV1 Card -Bits: Passed
+     Measurement:              26
+     Limits:
+        Low:                   26
+     Comparison Type:          EQ (==)
+TEST 13 - SMART DESFIRE EV2 Card Read : Passed
+     Measurement:
+        Measurement[0] (Range):
+           Limits:
+              Low:             1.625
+           Comparison Type:    GE (>=)
+           Data:               2.343700787402
+           Status:             Passed
+        Measurement[1] (Data):
+           Limits:
+              Low:             2516662336
+           Comparison Type:    EQ (==)
+           Data:               2516662336
+           Status:             Passed
+     Module Time:              7.3865892
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 13 - SMART DESFIRE EV2 Card Read Range: Passed
+     Measurement:              2.343700787402
+     Limits:
+        Low:                   1.625
+     Comparison Type:          GE (>=)
+TEST 13 - SMART DESFIRE EV2 Card -Data: Passed
+     Measurement:              2516662336
+     Limits:
+        Low:                   2516662336
+     Comparison Type:          EQ (==)
+TEST 13 - SMART DESFIRE EV2 Card -Bits: Passed
+     Measurement:              26
+     Limits:
+        Low:                   26
+     Comparison Type:          EQ (==)
+TEST 14 - SMART DESFIRE EV1 Card Read: Passed
+     Measurement:
+        Measurement[0] (Range):
+           Limits:
+              Low:             1.125
+           Comparison Type:    GE (>=)
+           Data:               1.407086614173
+           Status:             Passed
+        Measurement[1] (Data):
+           Limits:
+              Low:             462653568
+           Comparison Type:    EQ (==)
+           Data:               462653568
+           Status:             Passed
+     Pulgadas [Out]:           1.407086614173
+     card_Data [Out]:          462653568
+     Module Time:              9.4451747
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 14 - SMART DESFIRE EV1 Card Read Range: Passed
+     Measurement:              1.407086614173
+     Limits:
+        Low:                   1.125
+     Comparison Type:          GE (>=)
+TEST 13 - SMART DESFIRE EV1 Card -Data: Passed
+     Measurement:              462653568
+     Limits:
+        Low:                   462653568
+     Comparison Type:          EQ (==)
+TEST 13 - SMART DESFIRE EV1 Card -Bits: Passed
+     Measurement:              26
+     Limits:
+        Low:                   26
+     Comparison Type:          EQ (==)
+TEST 15 - SMART PLUS Card Read Range: Passed
+     Measurement:              1.341732283465
+     Limits:
+        Low:                   1
+     Comparison Type:          GE (>=)
+     Module Time:              8.3175768
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 13 - SMART PLUS Card -Data: Passed
+     Measurement:              462653568
+     Limits:
+        Low:                   462653568
+     Comparison Type:          EQ (==)
+TEST 13 - SMART PLUS Card -Bits: Passed
+     Measurement:              26
+     Limits:
+        Low:                   26
+     Comparison Type:          EQ (==)
+TEST 9 - TEST CAP SENSE ACCUMULATED COUNTS: Passed
+     Measurement:              0
+     Limits:
+        Low:                   0
+     Comparison Type:          EQ (==)
+     object_Detected [Out]:    0
+     Module Time:              0.1652733
+TEST 9 - TEST CAP SENSE FALSE DETECTS: Passed
+     Measurement:              0
+     Limits:
+        Low:                   0
+     Comparison Type:          EQ (==)
+     object_Detected [Out]:    0
+     Module Time:              0.0539798
+TEST 9 - Ttest Cap Sense Active: Passed
+     Measurement:              1
+     Limits:
+        Low:                   1
+     Comparison Type:          EQ (==)
+     CAP Sense Inactive-bytes [[0] = 0
+                               [1] = 0
+                               [2] = 0
+                               [3] = 0
+                               [4] = 0
+                               [5] = 134
+                               [6] = 139
+                               [7] = 0
+                               [8] = 134
+                               [9] = 16
+                               [10] = 198
+                               [11] = 223
+                               [12] = 192
+     CAP Sense Active- bytes [O[0] = 1
+                               [1] = 1
+                               [2] = 0
+                               [3] = 0
+                               [4] = 0
+                               [5] = 134
+                               [6] = 143
+                               [7] = 0
+                               [8] = 134
+                               [9] = 16
+                               [10] = 198
+                               [11] = 223
+                               [12] = 192
+     CAP Sense Active [Out]:   1
+     CAP Sense Inactive-rawData[0] = 0
+                               [1] = 0
+                               [2] = 0
+                               [3] = 34443
+                               [4] = 134
+                               [5] = 281468864
+     CAP Sense Active- rawData [0] = 1
+                               [1] = 1
+                               [2] = 0
+                               [3] = 34447
+                               [4] = 134
+                               [5] = 281468864
+     Module Time:              5.5190785
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 9 -TEST CAP SENSE INACTIVE: Passed
+     Measurement:              0
+     Limits:
+        Low:                   0
+     Comparison Type:          EQ (==)
+     object_Detected [Out]:    0
+     Module Time:              0.06055
+TEST 6 - KL16 Status LED:      Passed
+     Module Time:              6.6165151
+
+   Begin Sequence: TEST 6 - KL16 Status LED-Camera
+   (C:\Topaz Sequence\Sequence File Topaz.seq)
+
+   Active Status LED Red (Loop Index: 0): Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        Module Time:              0.1884073
+   Status LED Red ON:             Passed
+        Module Time:              0.0506885
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Status LED Red OFF:            Passed
+        Module Time:              0.1501212
+        Number of Loops:          3
+        Number of Passes:         1
+        Number of Failures:       2
+        Final Loop Index:         3
+   Status LED Green ON:           Passed
+        Module Time:              0.0517747
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Status LED Green OFF:          Passed
+        Module Time:              0.0488534
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Status LED Blue ON:            Passed
+        Module Time:              0.0519574
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Status LED Blue OFF:           Passed
+        Module Time:              0.1509574
+        Number of Loops:          3
+        Number of Passes:         1
+        Number of Failures:       2
+        Final Loop Index:         3
+
+   End Sequence: TEST 6 - KL16 Status LED-Camera
+
+TEST 16 - KL16 Perform FDR:    Passed
+     Measurement:              1
+     Limits:
+        Low:                   1
+     Comparison Type:          EQ (==)
+     Module Time:              0.2370919
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 18 - K24 Firmware Version: Passed
+     String:                   60.45.3
+     Limits:
+        String:                60.45.3
+     Comparison Type:          Case Sensitive
+     Module Time:              0.0771706
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+K24 FW Version UART:           Passed
+     String:                   FW Version :  60.45.3
+     Limits:
+        String:                FW Version :  60.45.3
+     Comparison Type:          Case Sensitive
+K24 Bootloader Version UART:   Passed
+     String:                   BL Version :  10.2.0
+     Limits:
+        String:                BL Version :  10.2.0
+     Comparison Type:          Case Sensitive
+K24 BLE Version:               Passed
+     String:                   02.11.01.241, 01.08.
+     Limits:
+        String:                02.11.01.241, 01.08.
+     Comparison Type:          Case Sensitive
+K24 FFR Firmware Version:      Passed
+     String:                   0.0.0
+     Limits:
+        String:                0.0.0
+     Comparison Type:          Case Sensitive
+TEST 19 - K24 BLE CW- Power Level: Passed
+     Measurement:              -34.1487
+     Limits:
+        Low:                   -41.5
+        High:                  -31.5
+     Comparison Type:          GELE (>= <=)
+     Module Time:              4.6831496
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 19 - K24 BLE CW- Frecuency: Passed
+     Measurement:              2.402
+     Units:                    GHz
+     Limits:
+        Low:                   2.40194
+        High:                  2.40206
+     Comparison Type:          GELE (>= <=)
+TEST 21-Digital Input-Red ON:  Passed
+     Measurement:              0x1
+     Limits:
+        Low:                   0x1
+     Comparison Type:          EQ (==)
+     Module Time:              0.1541527
+     Number of Loops:          2
+     Number of Passes:         1
+     Number of Failures:       1
+     Final Loop Index:         2
+TEST 21-Digital Input-Red OFF: Passed
+     Measurement:              0x0
+     Limits:
+        Low:                   0x0
+     Comparison Type:          EQ (==)
+     Module Time:              0.1554089
+     Number of Loops:          2
+     Number of Passes:         1
+     Number of Failures:       1
+     Final Loop Index:         2
+TEST 21-Digital Input-Green ON: Passed
+     Measurement:              0x2
+     Limits:
+        Low:                   0x2
+     Comparison Type:          EQ (==)
+     Module Time:              0.0748622
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 21-Digital Input-Green OFF: Passed
+     Measurement:              0x0
+     Limits:
+        Low:                   0x0
+     Comparison Type:          EQ (==)
+     Module Time:              0.1517878
+     Number of Loops:          2
+     Number of Passes:         1
+     Number of Failures:       1
+     Final Loop Index:         2
+TEST 21-Digital Input-Spare ON: Passed
+     Measurement:              0x4
+     Limits:
+        Low:                   0x4
+     Comparison Type:          EQ (==)
+     Module Time:              0.1515871
+     Number of Loops:          2
+     Number of Passes:         1
+     Number of Failures:       1
+     Final Loop Index:         2
+TEST 21-Digital Input-Spare OFF: Passed
+     Measurement:              0x0
+     Limits:
+        Low:                   0x0
+     Comparison Type:          EQ (==)
+     Module Time:              0.1506971
+     Number of Loops:          2
+     Number of Passes:         1
+     Number of Failures:       1
+     Final Loop Index:         2
+TEST 21-Digital Input-Beep ON: Passed
+     Measurement:              0x8
+     Limits:
+        Low:                   0x8
+     Comparison Type:          EQ (==)
+     Module Time:              0.1491942
+     Number of Loops:          2
+     Number of Passes:         1
+     Number of Failures:       1
+     Final Loop Index:         2
+TEST 21-Digital Input-Beep OFF: Passed
+     Measurement:              0x0
+     Limits:
+        Low:                   0x0
+     Comparison Type:          EQ (==)
+     Module Time:              0.1519319
+     Number of Loops:          2
+     Number of Passes:         1
+     Number of Failures:       1
+     Final Loop Index:         2
+TEST 21-Digital Input-Tamper Active: Passed
+     Measurement:              0x10
+     Limits:
+        Low:                   0x10
+     Comparison Type:          EQ (==)
+     Module Time:              0.1535503
+     Number of Loops:          2
+     Number of Passes:         1
+     Number of Failures:       1
+     Final Loop Index:         2
+TEST 21-Digital Input-No Inputs Active: Passed
+     Measurement:              0x0
+     Limits:
+        Low:                   0x0
+     Comparison Type:          EQ (==)
+     Module Time:              7.1102011
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 22 - K24 Analog Input  ProductID Main: Failed
+     Measurement:              0
+     Limits:
+        Low:                   3584
+        High:                  4608
+     Comparison Type:          GELE (>= <=)
+     Module Time:              21.2859046
+     Number of Loops:          3
+     Number of Passes:         0
+     Number of Failures:       3
+     Final Loop Index:         3
+InsertProcess:                 Passed
+     Module Time:              0.0307904
+
+End Sequence: MainSequence
+
+End UUT Report
+

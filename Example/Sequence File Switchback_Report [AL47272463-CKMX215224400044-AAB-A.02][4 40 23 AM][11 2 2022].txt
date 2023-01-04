@@ -1,0 +1,36 @@
+********************************************************************************
+UUT Report
+Station ID:                   095ALLEGION05
+Serial Number:                AL47272463-CKMX215224400044-AAB-A.02
+Date:                         Wednesday, November 2, 2022
+Time:                         4:40:23 AM
+Operator:                     operator
+Execution Time:               3.1095749 seconds
+Number of Results:            9
+UUT Result:                   Failed
+Failure Chain:
+   Step                       Sequence             Sequence File
+   ----                       --------             -------------
+   Backcheck                  MainSequence         Sequence File Switchback.seq
+********************************************************************************
+
+Begin Sequence: MainSequence
+(C:\Topaz Sequence\Sequence File Switchback.seq)
+
+Backcheck:                     Failed
+     Measurement:              0
+     Limits:
+        Low:                   1
+     Comparison Type:          EQ (==)
+     Cimp_SerialNumber [In]:   AL47272463-CKMX215224400044-AAB-A.02
+     Cimp_SerialNumber [Out]:  AL47272463-CKMX215224400044-AAB-A.02
+     Cimp_StationName [In]:    STA_FNLFUNC133
+     Cimp_StationName [Out]:   STA_FNLFUNC133
+     Cimp_Function [In]:       ''
+     Cimp_Function [Out]:      MANUAL APPLY GLUE
+     Module Time:              0.0237685
+
+End Sequence: MainSequence
+
+End UUT Report
+

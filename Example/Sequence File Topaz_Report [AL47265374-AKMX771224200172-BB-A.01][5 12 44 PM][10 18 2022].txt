@@ -1,0 +1,76 @@
+********************************************************************************
+UUT Report
+Station ID:                   095ALLEGION05
+Serial Number:                AL47265374-AKMX771224200172-BB-A.01
+Date:                         Tuesday, October 18, 2022
+Time:                         5:12:44 PM
+Operator:                     operator
+Execution Time:               17.3043501 seconds
+Number of Results:            55
+UUT Result:                   Failed
+Failure Chain:
+   Step                       Sequence             Sequence File
+   ----                       --------             -------------
+   TEST 1 - Undervoltage Powe MainSequence         Sequence File Topaz.seq
+********************************************************************************
+
+Begin Sequence: MainSequence
+(C:\Topaz Sequence\Sequence File Topaz.seq)
+
+Backcheck:                     Passed
+     Measurement:              1
+     Limits:
+        Low:                   1
+     Comparison Type:          EQ (==)
+     Cimp_SerialNumber [In]:   AL47265374-AKMX771224200172-BB-A.01
+     Cimp_SerialNumber [Out]:  AL47265374-AKMX771224200172-BB-A.01
+     Cimp_StationName [In]:    STA_FNLFUNC133
+     Cimp_StationName [Out]:   STA_FNLFUNC133
+     Cimp_Function [In]:       ''
+     Cimp_Function [Out]:      TEST FINAL FUNCTIONAL
+     Module Time:              0.0070668
+Part number Test:              Passed
+     String:                   47265374+A+1
+     Limits:
+        String:                47265374+A+1
+     Comparison Type:          Case Sensitive
+TEST 1 - Undervoltage Power output 5V: Passed
+     Measurement:              0.0152896451
+     Limits:
+        Low:                   0
+        High:                  1
+     Comparison Type:          GELE (>= <=)
+     Module Time:              0.6359377
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 1 - Undervoltage Power output 3.3V: Passed
+     Measurement:              0.0138071655
+     Limits:
+        Low:                   0
+        High:                  1
+     Comparison Type:          GELE (>= <=)
+     Module Time:              0.4993759
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 1 - Undervoltage Power - input current: Failed
+     Measurement:              0.00237298004
+     Limits:
+        Low:                   0.025
+        High:                  0.06
+     Comparison Type:          GELE (>= <=)
+     Module Time:              13.7552814
+     Number of Loops:          10
+     Number of Passes:         0
+     Number of Failures:       10
+     Final Loop Index:         10
+InsertProcess:                 Passed
+     Module Time:              0.0105619
+
+End Sequence: MainSequence
+
+End UUT Report
+

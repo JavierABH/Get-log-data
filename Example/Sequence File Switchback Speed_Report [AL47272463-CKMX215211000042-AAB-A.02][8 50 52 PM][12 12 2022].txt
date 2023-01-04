@@ -1,0 +1,315 @@
+********************************************************************************
+UUT Report
+Station ID:                   095ALLEGION05
+Serial Number:                AL47272463-CKMX215211000042-AAB-A.02
+Date:                         Monday, December 12, 2022
+Time:                         8:50:52 PM
+Operator:                     operator
+Execution Time:               59.7774641 seconds
+Number of Results:            74
+UUT Result:                   Failed
+Failure Chain:
+   Step                       Sequence             Sequence File
+   ----                       --------             -------------
+   TEST 10 - Prox FSK Card-Da MainSequence         Sequence File Switchback Speed.seq
+********************************************************************************
+
+Begin Sequence: MainSequence
+(C:\Topaz Sequence\Sequence File Switchback Speed.seq)
+
+Backcheck:                     Passed
+     Measurement:              1
+     Limits:
+        Low:                   1
+     Comparison Type:          EQ (==)
+     Cimp_SerialNumber [In]:   AL47272463-CKMX215211000042-AAB-A.02
+     Cimp_SerialNumber [Out]:  AL47272463-CKMX215211000042-AAB-A.02
+     Cimp_StationName [In]:    STA_FNLFUNC133
+     Cimp_StationName [Out]:   STA_FNLFUNC133
+     Cimp_Function [In]:       ''
+     Cimp_Function [Out]:      TEST FINAL FUNCTIONAL
+     Module Time:              0.0543014
+Part number Test:              Passed
+     String:                   47272463+C
+     Limits:
+        String:                47272463+C
+     Comparison Type:          Case Sensitive
+   TEST 1 - POWER BOARD - Led Power Test: Passed
+        X LED Power [Out]:        0.219
+        Y LED Power [Out]:        0.6381
+        Module Time:              0.5857236
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   TEST 1 - POWER BOARD - Led Power Test: Passed
+        X LED Power [Out]:        0.2227
+        Y LED Power [Out]:        0.6658
+        Module Time:              0.58914
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+X LED Power Green:             Passed
+     Measurement:              0.2227
+     Limits:
+        Low:                   0.1525
+        High:                  0.2875
+     Comparison Type:          GELE (>= <=)
+Y LED Power Green:             Passed
+     Measurement:              0.6658
+     Limits:
+        Low:                   0.65
+        High:                  0.962
+     Comparison Type:          GELE (>= <=)
+KL16 FW Version UART:          Passed
+     String:                   TOPAZ Reader v02.08.01
+     Limits:
+        String:                TOPAZ Reader v02.08.01
+     Comparison Type:          Ignore Case
+KL16 Bootloader Version UART:  Passed
+     String:                   bootloader v8.3.8
+     Limits:
+        String:                bootloader v8.3.8
+     Comparison Type:          Ignore Case
+KL16 Compiled Date UART:       Passed
+     String:                   compiled on Apr 16 2020 at 14:18:49
+     Limits:
+        String:                compiled on Apr 16 2020 at 14:18:49
+     Comparison Type:          Ignore Case
+TEST 4 - KL16 Status LED:      Passed
+     Module Time:              6.3761256
+
+   Begin Sequence: TEST 6 - KL16 Status LED-Camera
+   (C:\Topaz Sequence\Sequence File Switchback Speed.seq)
+
+   Active Status LED Red:         Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        aCK [Out]:                1
+        Module Time:              0.0547765
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Status LED Red ON:             Passed
+        Output [Out]:             True
+        Module Time:              0.0519682
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Inactive Status LED Red:       Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        aCK [Out]:                1
+        Module Time:              0.0551957
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Status LED Red OFF:            Passed
+        Output [Out]:             False
+        Module Time:              0.1509933
+        Number of Loops:          3
+        Number of Passes:         1
+        Number of Failures:       2
+        Final Loop Index:         3
+   Active Status LED Green:       Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        aCK [Out]:                1
+        Module Time:              0.1350259
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Status LED Green ON:           Passed
+        Output [Out]:             True
+        Module Time:              0.0512516
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Inactive Status LED Green:     Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        aCK [Out]:                1
+        Module Time:              0.1142114
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Status LED Green OFF:          Passed
+        Output [Out]:             False
+        Module Time:              0.0505656
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Active Status LED Blue:        Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        Module Time:              0.0902456
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Status LED Blue ON:            Passed
+        Module Time:              0.0511115
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Inactive Status LED Blue:      Passed
+        Measurement:              1
+        Limits:
+           Low:                   1
+        Comparison Type:          EQ (==)
+        Module Time:              0.1094688
+        Number of Loops:          1
+        Number of Passes:         1
+        Number of Failures:       0
+        Final Loop Index:         1
+   Status LED Blue OFF:           Passed
+        Module Time:              0.1508165
+        Number of Loops:          3
+        Number of Passes:         1
+        Number of Failures:       2
+        Final Loop Index:         3
+
+   End Sequence: TEST 6 - KL16 Status LED-Camera
+
+TEST 5 - Firmware Version:     Passed
+     String:                   2.8.1
+     Limits:
+        String:                2.8.1
+     Comparison Type:          Ignore Case
+     Module Time:              0.5847576
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 7 - KL16 Beeper ON:       Passed
+     Measurement:              3.24
+     Limits:
+        Low:                   2
+     Comparison Type:          GE (>=)
+     Buzzer ON [Out]:          True
+     Measurement Value ON [Out]3.24
+     Module Time:              0.7033492
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 7 - KL16 Beeper OFF:      Passed
+     Buzzer OFF [Out]:         True
+     Module Time:              4.6377858
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 8 - KL16 SAM Test:        Passed
+     Measurement:              1
+     Limits:
+        Low:                   1
+     Comparison Type:          EQ (==)
+     Module Time:              0.1272633
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 9 - CAP Sense:            Passed
+     Measurement:
+        Measurement[0] (False Detects):
+           Limits:
+              Low:             0
+           Comparison Type:    EQ (==)
+           Data:               0
+           Status:             Passed
+        Measurement[1] (CAP Sense Active):
+           Limits:
+              Low:             1
+           Comparison Type:    EQ (==)
+           Data:               1
+           Status:             Passed
+        Measurement[2] (CAP Sense Inactive):
+           Limits:
+              Low:             0
+           Comparison Type:    EQ (==)
+           Data:               0
+           Status:             Passed
+     CAP Sense Inactive-bytes [[0] = 0
+                               [1] = 0
+                               [2] = 0
+                               [3] = 0
+                               [4] = 0
+                               [5] = 141
+                               [6] = 171
+                               [7] = 0
+                               [8] = 141
+                               [9] = 16
+                               [10] = 198
+                               [11] = 223
+                               [12] = 192
+     CAP Sense Active- bytes [O[0] = 1
+                               [1] = 1
+                               [2] = 0
+                               [3] = 0
+                               [4] = 0
+                               [5] = 141
+                               [6] = 173
+                               [7] = 0
+                               [8] = 141
+                               [9] = 16
+                               [10] = 198
+                               [11] = 223
+                               [12] = 192
+     CAP Sense Inactive-rawData[0] = 0
+                               [1] = 0
+                               [2] = 0
+                               [3] = 36267
+                               [4] = 141
+                               [5] = 281468864
+     CAP Sense Active- rawData [0] = 1
+                               [1] = 1
+                               [2] = 0
+                               [3] = 36269
+                               [4] = 141
+                               [5] = 281468864
+     Module Time:              6.1990916
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 10 - Prox FSK Card Read Range: Passed
+     Pulgadas [Out]:           3.523622047244
+     card_Bits [Out]:          0
+     card_Data [Out]:          0
+     Module Time:              5.5692223
+     Number of Loops:          1
+     Number of Passes:         1
+     Number of Failures:       0
+     Final Loop Index:         1
+TEST 10 - Prox FSK Card-Data:  Failed
+     Measurement:              0
+     Limits:
+        Low:                   2979235712
+     Comparison Type:          EQ (==)
+InsertProcess:                 Passed
+     Module Time:              0.0704969
+
+End Sequence: MainSequence
+
+End UUT Report
+
