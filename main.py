@@ -50,6 +50,7 @@ def main():
             status.append(utt_status)
     
     print("Write CSV")
+    # ------------ start write in csv ---------------- #
     with open('Info red led.csv', 'w', newline='') as f:
         write = csv.writer(f)
         write.writerow(fields)
