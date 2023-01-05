@@ -66,7 +66,7 @@ class Log:
                 self.operator = line[30:].rstrip('\n')
                 return True if self.operator == "operator" else False
 
-    def get_test_led(self):
+    def get_test_green_ledx(self):
         led_status = None
         Measurement = None
         lines_i = self.get_lines().__iter__()
@@ -79,6 +79,19 @@ class Log:
             #     Measurement = next_line[31:].rstrip('\n')
             # ------------------ For test led green x---------------------------------- #
             if "X LED Power Green:" in line:
+                status_str = line.split(':')[0].strip(' ').rstrip('\n')
+                led_status = True if status_str == "Passed" else False
+                next_line = lines_i.__next__()
+                Measurement = next_line.split(':')[1].strip(' ').rstrip('\n')
+
+        return (led_status, Measurement)
+
+    def get_test_red_ledy(self):
+        led_status = None
+        Measurement = None
+        lines_i = self.get_lines().__iter__()
+        for line in lines_i:
+            if "Y LED Power Green:" in line:
                 status_str = line.split(':')[0].strip(' ').rstrip('\n')
                 led_status = True if status_str == "Passed" else False
                 next_line = lines_i.__next__()
