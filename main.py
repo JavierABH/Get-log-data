@@ -57,7 +57,7 @@ def main():
     
     print("Write CSV")
     # ------------ start write in csv ---------------- #
-    with open('Info green x led.csv', 'w', newline='') as f:
+    with open('Info green led.csv', 'w', newline='') as f:
         write = csv.writer(f)
         write.writerow(fields)
         # for row in zip(models, part_numbers, dates, cycle_times):

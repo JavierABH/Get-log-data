@@ -86,7 +86,7 @@ class Log:
 
         return (led_status, Measurement)
 
-    def get_test_red_ledy(self):
+    def get_test_green_ledy(self):
         led_status = None
         Measurement = None
         lines_i = self.get_lines().__iter__()
