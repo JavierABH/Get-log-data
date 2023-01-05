@@ -28,7 +28,7 @@ def main():
         print(date)
         cycle_time = log.get_cycle_time()
         part_number = log.get_partnumber()
-        led_red_info, led_red_measurement = log.get_test_redled()
+        led_red_info, led_red_measurement = log.get_test_led()
         utt_status = log.get_utt_status()
 
         #------------For cycle time---------------#
@@ -51,7 +51,7 @@ def main():
     
     print("Write CSV")
     # ------------ start write in csv ---------------- #
-    with open('Info red led.csv', 'w', newline='') as f:
+    with open('Info green x led.csv', 'w', newline='') as f:
         write = csv.writer(f)
         write.writerow(fields)
         # for row in zip(models, part_numbers, dates, cycle_times):
