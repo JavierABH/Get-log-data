@@ -29,11 +29,13 @@ def main():
         model = log.get_model()
         date = log.get_datetime()
         print(date)
+        # print(path)
         cycle_time = log.get_cycle_time()
         part_number = log.get_partnumber()
-        led_greenx_info, led_greenx_measurement = log.get_test_green_ledx()
         utt_status = log.get_utt_status()
+        led_greenx_info, led_greenx_measurement = log.get_test_green_ledx()
         led_greeny_info, led_greeny_measurement = log.get_test_green_ledy()
+
 
         #------------For cycle time---------------#
         # if log.get_utt_status():
@@ -43,6 +45,7 @@ def main():
                 # dates.append(date)
                 # cycle_times.append(cycle_time)
         #----------------------------------------#
+
         if log.get_operator():
             serials.append(serial)
             models.append(model)

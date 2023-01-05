@@ -79,7 +79,7 @@ class Log:
             #     Measurement = next_line[31:].rstrip('\n')
             # ------------------ For test led green x---------------------------------- #
             if "X LED Power Green:" in line:
-                status_str = line.split(':')[0].strip(' ').rstrip('\n')
+                status_str = line.split(':')[1].strip(' ').rstrip('\n')
                 led_status = True if status_str == "Passed" else False
                 next_line = lines_i.__next__()
                 Measurement = next_line.split(':')[1].strip(' ').rstrip('\n')
@@ -92,7 +92,7 @@ class Log:
         lines_i = self.get_lines().__iter__()
         for line in lines_i:
             if "Y LED Power Green:" in line:
-                status_str = line.split(':')[0].strip(' ').rstrip('\n')
+                status_str = line.split(':')[1].strip(' ').rstrip('\n')
                 led_status = True if status_str == "Passed" else False
                 next_line = lines_i.__next__()
                 Measurement = next_line.split(':')[1].strip(' ').rstrip('\n')
