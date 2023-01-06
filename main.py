@@ -47,20 +47,21 @@ def main():
         #----------------------------------------#
 
         if log.get_operator():
-            serials.append(serial)
-            models.append(model)
-            part_numbers.append(part_number)
-            dates.append(date)
-            cycle_times.append(cycle_time)
-            leds_greenx_status.append(led_greenx_info)
-            leds_greeny_status.append(led_greeny_info)
-            leds_greenx_measurements.append(led_greenx_measurement)
-            leds_greeny_measurements.append(led_greeny_measurement)
-            status.append(utt_status)
+            if model == "Switchback":
+                serials.append(serial)
+                models.append(model)
+                part_numbers.append(part_number)
+                dates.append(date)
+                cycle_times.append(cycle_time)
+                leds_greenx_status.append(led_greenx_info)
+                leds_greeny_status.append(led_greeny_info)
+                leds_greenx_measurements.append(led_greenx_measurement)
+                leds_greeny_measurements.append(led_greeny_measurement)
+                status.append(utt_status)
     
     print("Write CSV")
     # ------------ start write in csv ---------------- #
-    with open('Info green led.csv', 'w', newline='') as f:
+    with open('Info green led only sw.csv', 'w', newline='') as f:
         write = csv.writer(f)
         write.writerow(fields)
         # for row in zip(models, part_numbers, dates, cycle_times):

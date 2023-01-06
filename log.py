@@ -28,7 +28,7 @@ class Log:
     def get_datetime(self):
         date_str = self.get_str_date()
         date_tmp = datetime.strptime(date_str, '%A, %B %d, %Y')
-        self.date = date_tmp.strftime("%d/%m/%Y")
+        self.date = date_tmp.strftime("%m/%d/%Y")
         return self.date
 
     def get_cycle_time(self):
